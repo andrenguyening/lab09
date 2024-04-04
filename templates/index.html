@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poems</title>
+</head>
+<body>
+    <h1>List of Poems</h1>
+    <ul>
+        {% for poem in poems %}
+        <li>
+            <h2>{{ poem[1] }}</h2>
+            <p><strong>Author:</strong> {{ poem[2] }}</p>
+            <p>{{ poem[3] }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
